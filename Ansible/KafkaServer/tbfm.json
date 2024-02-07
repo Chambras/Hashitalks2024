@@ -1,0 +1,8 @@
+{
+    "SWIMUserName": "marcelo.zambrana.microsoft.com",
+    "SWIMEndpoint": "tcps://ems2.swim.faa.gov",
+    "SWIMEndpointPort": "55443",
+    "TBFMVPN": "TBFM",
+    "TBFMQueue": "marcelo.zambrana.microsoft.com.TBFM.a7334bbf-780c-4978-acbe-5a3de258e181.OUT",
+    "TBFMPassword": "TEST"
+}

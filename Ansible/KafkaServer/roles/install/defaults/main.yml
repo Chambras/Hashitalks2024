@@ -1,0 +1,39 @@
+---
+# The Apache Kafka version to be downloaded and installed
+
+kafka_version: 2.3.0
+kafka_scala_version: 2.12
+jdk_version: 11
+
+# The kafka user and group to create files/dirs with and for running the kafka service
+
+kafka_user: kafkaAdmin
+kafka_group: kafkaAdmin
+
+kafka_root_dir: /opt
+kafka_dir: "{{ kafka_root_dir }}/kafka"
+
+solace_version: 3.1.0
+
+# Generic User Configuration
+SWIMUserName: <<GETUSERNAMEFROMSWIM>>
+SWIMEndpoint: <<GETENDFROMSWIM>>
+SWIMEndpointPort: 55443
+
+## TFMS Secrets!! Better to be set somewhere else for production
+## The task looks for TFMSPassword value as environment variable
+TFMSPASSWORD: <<GETPASSWORDFROMSWIM>>
+TFMSVPN: <<GETVPNFROMSWIM>>
+TFMSQueue: <<GETQUEUEFROMSWIM>>
+
+## STDDS Secrets!! Better to be set somewhere else for production
+## The task looks for STDDSPassword value as environment variable
+STDDSPASSWORD: <<GETPASSWORDFROMSWIM>>
+STDDSVPN: <<GETVPNFROMSWIM>>
+STDDSQueue: <<GETQUEUEFROMSWIM>>
+
+## TBFM Secrets!! Better to be set somewhere else for production
+## The task looks for TBFMPassword value as environment variable
+TBFMPASSWORD: <<GETPASSWORDFROMSWIM>>
+TBFMVPN: <<GETVPNFROMSWIM>>
+TBFMQueue: <<GETQUEUEFROMSWIM>>

@@ -1,0 +1,8 @@
+{
+   "SWIMUserName": "marcelo.zambrana.microsoft.com",
+   "SWIMEndpoint": "tcps://ems2.swim.faa.gov",
+   "SWIMEndpointPort": "55443",
+   "STDDSVPN": "STDDS",
+   "STDDSQueue": "marcelo.zambrana.microsoft.com.STDDS.dac89edc-6bb7-4295-8c5c-0e299baba7e3.OUT",
+   "STDDSPassword": "TEST"
+}
