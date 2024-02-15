@@ -3,22 +3,8 @@
 It creates the following resources:
 
 - A DataBricks Cluster.
-- A starter Notebook with initial python code to connect to Kafka.
-
-## Project Structure
-
-This project has the following files which make them easy to reuse, add or remove.
-
-```ssh
-.
-├── LICENSE
-├── README.md
-├── clusters.tf
-├── main.tf
-├── notebooks.tf
-├── outputs.tf
-└── variables.tf
-```
+- A Workflow and related notebooks to automatically ingest, clean and analyze in batch mode.
+- A starter Notebook with initial python code to connect to Kafka and required XML libraries.
 
 Most common parameters are exposed as variables in _`variables.tf`_
 
@@ -31,10 +17,10 @@ More information on this topic [here](https://docs.microsoft.com/en-us/azure/vir
 
 This terraform script has been tested using the following versions:
 
-- Terraform =>1.5.7
-- Azure provider 3.74.0
-- Databricks provider 1.26.0
-- Azure CLI 2.52.0
+- Terraform =>1.7.2
+- Azure provider 3.89.0
+- Databricks provider 1.34.0
+- Azure CLI 2.57.0
 
 ## Usage
 

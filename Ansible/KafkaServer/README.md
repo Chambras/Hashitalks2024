@@ -6,32 +6,6 @@ It uses the Solace Kafka Connector in order to stablish communication. More info
 
 Lastly, This specific repo configures everything that is needed to connect to [FAA SWIM TFMS](https://www.faa.gov/air_traffic/technology/swim/) service, but other sources could be configured easily you can use the _`connect-solace-source.properties.j2`_ configuration template.
 
-## Project Structure
-
-```ssh
-.
-├── LICENSE
-├── README.md
-├── ansible.cfg
-├── apache_kafka.yml
-├── hosts
-└── roles
-    └── install
-        ├── defaults
-        │   └── main.yml
-        ├── handlers
-        │   └── main.yml
-        ├── tasks
-        │   └── main.yml
-        └── templates
-            ├── bashrc.j2
-            ├── connect-solace-source.properties.j2
-            ├── connect-standalone.properties.j2
-            ├── kafka.service.j2
-            ├── solace_source.properties.j2
-            └── zookeeper.service.j2
-```
-
 ## Requirements
 
 ### Platform Support
@@ -41,7 +15,7 @@ Lastly, This specific repo configures everything that is needed to connect to [F
 
 ### Versions
 
-- ansible 2.9.17
+- ansible 2.9.27
 
 ### Authentication
 
@@ -73,11 +47,19 @@ For development purposes _`roles/install/defaults/main.yml`_ also has a secrets 
 ```ssh
 SWIMEndpoint:
 SWIMEndpointPort:
-SWIMUserNaMe:
-Password:
-SWIMVPN:
-SWIMQueue:
+SWIMUserName:
+TFMSPASSWORD:
+TFMSVPN:
+TFMSQueue:
+STDDSPASSWORD:
+STDDSVPN:
+STDDSQueue:
+TBFMPASSWORD:
+TBFMVPN:
+TBFMQueue:
 ```
+
+You can also pass some of the secrets by updating the files `stdds.json`, `tbfm.json` and `tfms.json`.
 
 ## Usage
 

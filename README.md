@@ -13,6 +13,9 @@ This project has the following folders which make them easy to reuse, add or rem
 .
 ├── .github
 │   └── workflows
+├── Ansible
+│   └── KafkaServer
+│       └── roles
 ├── Infrastructure
 │   ├── terraform-azure
 │   └── terraform-databricks
@@ -22,16 +25,17 @@ This project has the following folders which make them easy to reuse, add or rem
     └── Songs
         ├── python
         └── sql
+
 ```
 
 ## Pre-requisites
 
 This project requires the following versions:
 
-- **Terraform** =>1.7.1
+- **Terraform** =>1.7.2
 - **Azure provider** 3.89.0
 - **Databricks provider** 1.34.0
-- **Azure CLI** 2.56.0
+- **Azure CLI** 2.57.0
 
 It also uses GitHub Secrets to store all required keys and secrets. The following GitHub Secrets need to be created ahead of time:
 
@@ -42,6 +46,10 @@ It also uses GitHub Secrets to store all required keys and secrets. The followin
 - **PBLC_VM_SSH** - Public SSH key of the VM.
 - **PRVT_VM_SSH** - Private SSH key of the VM.
 - **TF_API_TOKEN** - Terraform Cloud API Token.
+
+It also needs access to [FAA SWIM](https://www.faa.gov/air_traffic/technology/swim) for the streamming part of the demo. A more complete demo and information about SWIM can be found in my article [Ingest FAA SWIM content to analyze flight data](https://aka.ms/AAgnicg)
+
+
 
 ## Caution
 
