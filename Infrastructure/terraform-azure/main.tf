@@ -7,11 +7,11 @@ terraform {
       project = "Hashitalks"
     }
   }
-  required_version = "= 1.7.2"
+  required_version = "= 1.9.3"
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = "= 3.89.0"
+      version = "= 3.114.0"
     }
   }
 }

@@ -49,8 +49,6 @@ It also uses GitHub Secrets to store all required keys and secrets. The followin
 
 It also needs access to [FAA SWIM](https://www.faa.gov/air_traffic/technology/swim) for the streamming part of the demo. A more complete demo and information about SWIM can be found in my article [Ingest FAA SWIM content to analyze flight data](https://aka.ms/AAgnicg)
 
-
-
 ## Caution
 
 Be aware that by running this project your account will get billed.
